@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Always reserve vertical scrollbar to prevent layout shift */
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

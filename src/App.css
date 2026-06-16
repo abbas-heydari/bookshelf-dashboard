@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-josefin-sans: "Josefin Sans", sans-serif;
+}
+.hide-Scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-Scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
