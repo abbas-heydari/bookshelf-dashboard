@@ -1,19 +1,17 @@
 import BookCard from "./BookCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { fetchRecommendedBooks } from "../../Services/OpenLibrary";
 
-// memoize fetching books to note sending request fory every changes on pages
 const Recoms = () => {
-  const [books, setBooks] = useState([]);
   const [showAll, setShowAll] = useState(false);
 
-  useEffect(() => {
-    async function loadBooks() {
-      const data = await fetchRecommendedBooks();
-      setBooks(data);
-    }
-    loadBooks();
-  }, []);
+  const { data: books = [] } = useQuery({
+    queryKey: ["recommendedBooks"],
+    queryFn: fetchRecommendedBooks,
+    staleTime: 1000 * 60 * 60, // Cache for 1 hour
+    gcTime: 1000 * 60 * 60 * 24, // Keep inactive cache for 24 hours
+  });
 
   const visibleBooks = showAll ? books.slice(0, 40) : books.slice(0, 10);
 
@@ -45,3 +43,4 @@ const Recoms = () => {
   );
 };
 export default Recoms;
+

@@ -42,7 +42,7 @@ const Discover = () => {
     content = <div> no mathches found </div>;
   } else if (hasSearched) {
     content = (
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-yellow-200">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {searchResults.map((book) => (
           <BookCard key={book.key} book={book} />
         ))}

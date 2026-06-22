@@ -1,18 +1,61 @@
-# React + Vite
+Bookshelf Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive bookshelf application built with React and Tailwind CSS that allows users to discover, organize, and manage their personal reading collection.
 
-Currently, two official plugins are available:
+The application integrates with the Open Library API to search for books and provides an intuitive interface for creating a personalized digital library.
+Features
+🔍 Search millions of books using the Open Library API
+❤️ Add and remove favorite books
+📖 Organize books into your personal library
+🏷️ Filter books by reading status
+📚 Browse recommended books
+🎨 Modern responsive UI
+📱 Fully responsive design
+🛠 Tech Stack
+Frontend
+React
+JavaScript (ES6+)
+Tailwind CSS
+React Router
+Context API
+Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Clone the repository
 
-## React Compiler
+git clone https://github.com/abbas-heydari/bookshelf-dashboard.git
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Navigate to the project
 
-Note: This will impact Vite dev & build performances.
+cd bookshelf-dashboard
 
-## Expanding the ESLint configuration
+Install dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+
+Run the development server
+
+npm run dev
+
+Open your browser at
+
+http://localhost:5173
+
+What I Learned
+
+During this project I strengthened my understanding of:
+
+React component architecture
+State management with Context API
+Custom React Hooks
+API integration using Fetch
+Responsive design with Tailwind CSS
+Performance optimization
+React Router
+Reusable UI components
+Modern frontend project organizatio
+
+🔮 Future Improvements
+User authentication
+Cloud synchronization
+Reading statistics dashboard
+Book reviews and ratings
