@@ -2,27 +2,8 @@ Bookshelf Dashboard
 
 A modern and responsive bookshelf application built with React and Tailwind CSS that allows users to discover, organize, and manage their personal reading collection.
 
-The application integrates with the Open Library API to search for books and provides an intuitive interface for creating a personalized digital library.
-Features
-🔍 Search millions of books using the Open Library API
-❤️ Add and remove favorite books
-📖 Organize books into your personal library
-🏷️ Filter books by reading status
-📚 Browse recommended books
-🎨 Modern responsive UI
-📱 Fully responsive design
-🛠 Tech Stack
-Frontend
-React
-JavaScript (ES6+)
-Tailwind CSS
-React Router
-Context API
-Installation
+The application integrates with the Open Library API to search for books and provides an intuitive interface for creating a personalized digital library. Features 🔍 Search millions of books using the Open Library API ❤️ Add and remove favorite books 📖 Organize books into your personal library 🏷️ Filter books by reading status 📚 Browse recommended books 🎨 Modern responsive UI 📱 Fully responsive design 🛠 Tech Stack Frontend React JavaScript (ES6+) Tailwind CSS React Router Context API Installation
 
-Clone the repository
-
-git clone https://github.com/abbas-heydari/bookshelf-dashboard.git
 
 Navigate to the project
 
@@ -44,18 +25,6 @@ What I Learned
 
 During this project I strengthened my understanding of:
 
-React component architecture
-State management with Context API
-Custom React Hooks
-API integration using Fetch
-Responsive design with Tailwind CSS
-Performance optimization
-React Router
-Reusable UI components
-Modern frontend project organizatio
+React component architecture State management with Context API Custom React Hooks API integration using Fetch Responsive design with Tailwind CSS Performance optimization React Router Reusable UI components Modern frontend project organizatio
 
-🔮 Future Improvements
-User authentication
-Cloud synchronization
-Reading statistics dashboard
-Book reviews and ratings
+🔮 Future Improvements User authentication Cloud synchronization Reading statistics dashboard Book reviews and ratings
