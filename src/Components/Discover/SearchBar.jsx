@@ -3,7 +3,7 @@ const SearchBar = ({
   query,
   setQuery,
   onSearch,
-  className = "p-12 flex-1",
+  className = "py-12 flex-1 ",
   inputClassName = "max-w-1/2 min-w-64",
   placeholder = "find the book you like",
 }) => {
