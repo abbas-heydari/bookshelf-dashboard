@@ -14,6 +14,9 @@ const Recoms = () => {
   });
 
   const visibleBooks = showAll ? books.slice(0, 40) : books.slice(0, 10);
+  const cardClassName = showAll
+    ? "w-full max-w-[9rem] sm:max-w-[10rem] md:max-w-[11rem] lg:max-w-[12rem] justify-self-center"
+    : "w-37 sm:w-40 md:w-44 lg:w-48";
 
   return (
     <div className="w-full">
@@ -32,15 +35,14 @@ const Recoms = () => {
         className={
           showAll
             ? "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 "
-            : "flex gap-8 overflow-x-auto overflow-y-hidden snap-x pb-4 scroll-smooth hide-Scrollbar"
+            : "flex gap-8 overflow-x-auto snap-x px-1 py-2 scroll-smooth hide-Scrollbar"
         }
       >
         {visibleBooks.map((book) => (
-          <BookCard key={book.key} book={book} />
+          <BookCard key={book.key} book={book} className={cardClassName} />
         ))}
       </div>
     </div>
   );
 };
 export default Recoms;
-

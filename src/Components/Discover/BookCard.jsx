@@ -41,10 +41,10 @@ const BookCard = ({ book, className = "" }) => {
   return (
     <div
       onClick={() => setSelectedBook(minimalBook)}
-      className={`${className || "w-37 sm:w-40 md:w-44 lg:w-48"} aspect-2/3 rounded-2xl shrink-0 snap-start relative group`}
+      className={`${className || "w-37 sm:w-40 md:w-44 lg:w-48"} aspect-2/3 rounded-2xl shrink-0 snap-start relative group overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:z-10`}
     >
       <img
-        className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+        className="w-full h-full object-cover rounded-2xl transition-transform duration-300 will-change-transform group-hover:scale-105"
         src={coverUrl}
         alt={book.title}
       />
